@@ -1,0 +1,33 @@
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, fullpage, dsfont, graphicx, float, verbatim, bm, bbm}
+
+\begin{document}
+
+\title{STA 663 Final Project: ``The No-U-Turn Sampler'' \\ Progress Report 1 \\ 
+}
+\author{Sarah Normoyle, Gonzalo Bustos}
+
+\maketitle 
+
+\section{Rough Headings}
+\begin{itemize}
+	\item Summary of Work/Abstract
+	\item Background/Introduction
+	\item Implementation
+	\item Testing
+	\item Optimization
+	\item Application with Data and Model
+	\item Comparison with Stan and other MCMC Algorithms
+	\item Conclusion
+	\item References
+
+\end{itemize}
+
+\section{Rough Abstract}
+For many models, Monte Carlo Markov Chain (MCMC) methods such as Gibbs sampling and the Metropolis-Hasting algorithm may not be efficient and may require a long time to converge. By using steps that are evaluated from the first-order gradient of the log posterior, Hamiltonian Monte Carlo (HMC) is an efficient MCMC algorithm that does not use random walk behavior. This paper by Matthew D. Hoffman and Andrew Gelman introduces a new algorithm, called the No-U-Turn Sampler (NUTS) that is an extension of Hamiltonian Monte Carlo. Unlike HMC, NUTS does not require the specification of the parameter for the number of steps, $L$. In addition, the use of a dual averaging technique is extended from HMC to NUTS in order to avoid the specification of a step size parameter, $\epsilon$. Therefore, unlike HMC, NUTS can be implemented without having to hand-tune both of the two parameters, $L$ and $\epsilon$. In our report, we will implement the Naive NUTS Algorithm and also extend to the NUTS Algorithm with Dual Averaging. We will compare the efficiency and the results of this algorithm to other MCMC algorithms in Stan when used for a specific model and data set.
+
+
+
+
+\end{document}
