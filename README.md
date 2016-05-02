@@ -7,4 +7,4 @@ The No U-Turn Sampler
 
 Progress Reports 1 and 2 are in folder "Progress Reports"
 
-Final Report is in folder "final_report"
+Final Report is in folder "SarahNormoyleGonzaloBustos_Hoffman_FinalProject"
